@@ -1,264 +1,173 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link rel="stylesheet" type="text/css" href=".\library\style\sections.css"/>
-    <link rel="stylesheet" type="text/css" href=".\library\style\me.css"/>
-    <link rel="stylesheet" type="text/css" href=".\library\style\MusicPlayer.css"/>
-    <link rel="stylesheet" type="text/css" href=".\library\style\main.css"/>
-    <link rel="stylesheet" type="text/css" href=".\library\style\things.css"/>
-    <link rel="stylesheet" type="text/css" href=".\library\style\communication.css"/>
-    <link rel="stylesheet" type="text/css" href=".\library\style\communication_pics.css"/>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Shaiden · Personal</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="icon" href="assets/icons/favicon.png">
 </head>
 <body>
-<div class="container">
+	<header class="site-header" role="banner">
+		<nav class="nav" aria-label="主导航">
+			<a class="brand" href="#home" aria-label="返回首页"><img src="assets/icons/favicon.png" alt="S"></a>
+			<button class="nav-toggle" aria-label="切换菜单" aria-expanded="false">☰</button>
+			<ul class="nav-list">
+				<li><a href="#home">首页</a></li>
+				<li><a href="#about">关于我</a></li>
+				<li><a href="#contacts">联系</a></li>
+				<li><a href="#projects">项目</a></li>
 
-    <div class="section" id="home">
-        <h1 class="title-text Gshow">SHAIDEN'S</h1>
-        <p>
-        <h1 class="subtitle-text Gshow">行止由心 生活由己</h1></p>
-    </div>
-    <div class="section" id="me">
+			</ul>
+		</nav>
+	</header>
 
-        <h1 class="title-text Gshow">关于我</h1>
-        <p>
-        <h1 class="subtitle-text Gshow">ABOUT ME</h1></p>
-        <div class="nameCard">
-            <div class="b"></div>
-            <div class="c"></div>
-            <div class="d"></div>
-            <div class="e"></div>
-            <p class="f">&ensp;&ensp;自4年前初入信息技术，主攻Python语言，在网络安全，应用开发，前端搭建等方面都有所涉猎，已自学技术一大堆，却仍然是“半成品战神”<br/><br/>&ensp;&ensp;23年秋冬季入坑羽球圈，川崎极光7作为我的第一把入门拍。后因重量问题再次入手川崎冰川(4u g5),随后约2个月购入现主力战拍胜利TK-小隼(黑金4ug5)。现球包：川崎极光包、球鞋：川崎穿越2.0、球衣：Yonex桃田贤斗同款、口粮球：勇胜SF303<br /><br/>&ensp;&ensp;现役初中生，几何学的一塌糊涂。唯独对代数情有独钟...... <br /><br/>&ensp;&ensp;6年前，我便放下棋子，离别棋盘。黑白的交织令我难忘，至今我仍心头挂念着这些许圆子。虽多年未见棋盘，但心中想起仍有些许波澜。<br/><br/>&ensp;&ensp;喜欢记录生命中的角落瞬间，刚刚入门，并没有配单反，只有一个20年前的老古董和一台不怎么优秀的手机......           </p>
-        </div>
+	<main>
+		<section id="home" class="section hero" aria-label="首页">
+			<div class="bg-image" data-bg="assets/images/bg-home.jpg"></div>
+			<div class="hero-inner">
+				<h1 class="hero-title">Shaiden's</h1>
+				<p class="hero-subtitle">行止由心 生活由己</p>
+			</div>
+		</section>
 
-        <!--        <div class="container">-->
-        <!--            <div class="container-form container-signup">-->
-        <!--                <p>hello</p>-->
-        <!--            </div>-->
-        <!--            <div class="container-form container-signin">-->
-        <!--                <p>&ensp;&ensp;自4年前初入信息技术，主攻Python语言，在网络安全，应用开发，前端搭建等方面都有所涉猎，已自学技术一大堆，却仍然是“半成品战神”<br/></p>-->
+		<section id="about" class="section about" aria-label="关于我">
+			<div class="bg-image" data-bg="assets/images/bg-about.jpg"></div>
+			<div class="container narrow">
+				<h2 class="section-title">我吗？</h2>
+				<div class="about-grid">
+					<div class="glass card">
+						<h3>兴趣爱好</h3>
+						<ul class="bullet-list">
+							<li>IT:网安、Web、桌面应用有所涉猎</li>
+							<li>摄影:nikon D7000 (doge)</li>
+							<li>羽毛球:雷霆80/极光7 27lbs</li>
+							<li>Minecraft: UID:ShaidenP</li>
+						</ul>
+					</div>
+					<div class="glass card">
+						<h3>一句话</h3>
+						<p>行止由心，生活由己；简洁从心，大步向前。</p>
+					</div>
+				</div>
+			</div>
+		</section>
 
-        <!--            </div>-->
-        <!--            <div class="container-overlay">-->
-        <!--                <div class="overlay">-->
-        <!--                    <div class="overlay-panel overlay-left">-->
-        <!--                        <a class="btn1 more" id="in">了解更多</a>-->
-        <!--                    </div>-->
-        <!--                    <div class="overlay-panel overlay-right">-->
-        <!--                        <a class="btn1 more2" id="out">了解更多o</a>-->
-        <!--                    </div>-->
+		<section id="contacts" class="section contacts" aria-label="联系方式">
+			<div class="bg-image" data-bg="assets/images/bg-contacts.jpg"></div>
+			<div class="container">
+				<h2 class="section-title">联系more</h2>
+				<div class="card-grid">
+					<a class="glass contact-card" href="#contacts" target="_blank" rel="noopener" data-platform="WeChat">
+						<div class="icon"><img src="assets/icons/wechat.svg" alt="微信"></div>
+						<div class="info">
+							<h3>微信</h3>
+							<p>WXID: shaiden1207</p>
+						</div>
+					</a>
+					<a class="glass contact-card" href="https://mp.weixin.qq.com/s/hbKQgAzhoC6mxafF9iWTLg" target="_blank" rel="noopener" data-platform="WeChatOfficial">
+						<div class="icon"><img src="assets/icons/wechat-official.svg" alt="微信公众号"></div>
+						<div class="info">
+							<h3>公众号</h3>
+							<p>帅德online</p>
+							<p>ID: shaiden109</p>
+						</div>
+					</a>
+					<a class="glass contact-card" href="https://user.qzone.qq.com/3543533556" target="_blank" rel="noopener" data-platform="QQ">
+						<div class="icon"><img src="assets/icons/qq.svg" alt="QQ"></div>
+						<div class="info">
+							<h3>QQ</h3>
+							<p>3543533556</p>
+						</div>
+					</a>
+					<a class="glass contact-card" href="https://space.bilibili.com/1812040857" target="_blank" rel="noopener" data-platform="bilibili">
+						<div class="icon"><img src="assets/icons/bilibili.svg" alt="bilibili"></div>
+						<div class="info">
+							<h3>bilibili</h3>
+							<p>Shaiden帅德</p>
+						</div>
+					</a>
+					<a class="glass contact-card" href="https://www.yeah.net" target="_blank" rel="noopener" data-platform="email">
+						<div class="icon"><img src="assets/icons/email.svg" alt="Email"></div>
+						<div class="info">
+							<h3>Email</h3>
+							<p>shaiden@yeah.net</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</section>
 
-        <!--                </div>-->
-        <!--            </div>-->
-        <!--        </div>-->
+		<section id="projects" class="section projects" aria-label="项目">
+			<div class="bg-image" data-bg="assets/images/bg-projects.jpg"></div>
+			<div class="container">
+				<h2 class="section-title">小玩意</h2>
+				<div class="card-grid">
+					<a class="glass project-card" href="#projects" target="_blank" rel="noopener">
+						<h3>Shaiden's工作台 (Developing)</h3>
+						<p>一款定制性系统及应用工具箱</p>
+					</a>
+					<a class="glass project-card" href="#projects" target="_blank" rel="noopener">
+						<h3>LauncherS (Developing)</h3>
+						<p>简洁、高定、创新的MC启动器</p>
+					</a>
+					<a class="glass project-card" href="https://www.bilibili.com/video/BV1qC411z7D7/?share_source=copy_web&vd_source=6ab3d7cff64d161ea3fe567a301de1d0" target="_blank" rel="noopener">
+						<h3>MinecraftShaidenService (Developing)</h3>
+						<p>对于MC群体的服务器链接平台</p>
+					</a>
+				</div>
+			</div>
+		</section>
 
-        <div class="intu2">
-            <div class="cover2">
-            </div>
-            <div class="txt">
-                <h2>帅德Shaiden</h2>
-                <p>帅德 Shaiden<br/>2009年生人<br/>忠于祖国，马列主义者<br/>爱好IT、代数、羽毛球、摄影旅行、围棋、吉他...<br/>热忱于美丽的文字
-                </p>
-            </div>
-        </div>
-        <!-- 音乐播放器 -->
-        <div class="player">
-            <!-- 歌曲封面 -->
-            <div class="cover">
-            </div>
-            <!-- 歌词设置 -->
-            <div class="song">
-                <h2>心如止水</h2>
-                <p>
-                    talking to the moon 放不下的理由<br/>
-                    是不是会担心 变成一只野兽<br/>
-                    walking on the roof 为心跳的节奏<br/>
-                    是不是会暂停 在世界的尽头<br/>
-                    浸泡在十公升的瓶里<br/>
-                    单纯想要呼吸 讨厌云里雾里<br/>
-                    出没在被遗忘的抽屉<br/>
-                    你曾经的手笔 写着心口不一<br/>
-                    现在是黑夜白昼我都随便<br/>
-                    像迷路的天鹅游失在水面<br/>
-                    尽力去捕捉噩梦里的碎片<br/>
-                    不需要你的歌来帮我催眠<br/>
-                    talking to the moon 放不下的理由<br/>
-                    是不是会担心 变成一只野兽<br/>
-                    walking on the roof 为心跳的节奏<br/>
-                    是不是会暂停 在时间的尽头<br/>
-                    说不完的话 找不完的借口<br/>
-                    是不是会狠心 把我骄傲解剖<br/>
-                    爱着谁的她 能否将你接受<br/>
-                    是不是会上瘾 拜托慢些降落<br/>
-                    华丽的红房间 发霉的旧唱片<br/>
-                    没必要听个遍 掉了漆的播放键<br/>
-                    你情愿冒着险 睡在他的身边<br/>
-                    没耐心去分辨 谁和谁能够走多远<br/>
-                    穿过几条街就能找到关键<br/>
-                    解开我的问题没什么悬念<br/>
-                    转了几个弯还是回到原点<br/>
-                    我该如何出现在你的面前<br/>
-                    talking to the moon 放不下的理由<br/>
-                    是不是会担心 变成一只野兽<br/>
-                    walking on the roof 为心跳的节奏<br/>
-                    是不是会暂停 在时间的尽头<br/>
-                    说不完的话 找不完的借口<br/>
-                    是不是会狠心 把我骄傲解剖<br/>
-                    爱着谁的她 能否将你接受<br/>
-                    是不是会上瘾 拜托慢些降落<br/>
-                    talking to the moon 放不下的理由<br/>
-                    是不是会担心 变成一只野兽<br/>
-                    walking on the roof 为心跳的节奏<br/>
-                    是不是会暂停 在时间的尽头<br/>
-                    说不完的话 找不完的借口<br/>
-                    是不是会狠心 把我骄傲解剖<br/>
-                    爱着谁的她 能否将你接受<br/>
-                    是不是会上瘾 拜托慢些降落<br/>
-                    <!-- 歌词... -->
-                </p>
-            </div>
-            <!-- audio标签 -->
-            <div class="mus">
-                <audio src=".//library//sounds/sound1.mp3" controls></audio>
-            </div>
-        </div>
-        <!--        <div class="card">-->
-        <!--            <div class="a">-->
-        <!--                <div class="b">-->
+		<section id="music" class="section music" aria-label="音乐">
+			<div class="bg-image" data-bg="assets/images/bg-music.jpg"></div>
+			<div class="container narrow">
+				<h2 class="section-title">音符肆起 心脏搏动</h2>
+				<div class="glass player" role="region" aria-label="毛玻璃音乐播放器">
+					<div class="player-meta">
+						<div class="cover" aria-hidden="true"><img src="assets/icons/music-note.png" alt="音符"></div>
+						<div class="track">
+							<h3 class="track-title">心如止水</h3>
+							<p class="track-artist">— Ice Paper —</p>
+						</div>
+					</div>
+					<div class="player-controls">
+						<button class="btn icon" id="playBtn" aria-label="播放"><img src="assets/icons/play.svg" alt="播放"></button>
+						<input type="range" id="seek" min="0" max="100" value="0" aria-label="进度">
+						<span id="time" class="time">00:00 / 00:00</span>
+					</div>
+					<div class="player-extra">
+						<button class="btn ghost" id="muteBtn" aria-label="静音">静音</button>
+					</div>
+					<audio id="audio" preload="metadata">
+						<source src="assets/music/xinruzhishui.mp3" type="audio/mpeg">
+						您的浏览器不支持音频播放。
+					</audio>
+				</div>
+			</div>
+		</section>
 
-        <!--                    <a href="#">帅德Shaiden</a>-->
-        <!--                    <h4>Email:shaiden_plus@126.com</h4>-->
-        <!--                    <span>一名有个性的中学生</br>-->
-        <!--                        00后生人，常以IT、代数数学、羽毛球为乐<br/>活出自己是生命中的精神内核<br/>少年应有鸿鹄志 当骑骏马踏平川!</span>-->
-        <!--                </div>-->
-        <!--                <div class="c">-->
-        <!--                    &lt;!&ndash; &#45;&#45;i是用来计算平面圆柱的动效延迟和距离的-->
-        <!--                    &#45;&#45;w则是用来计算平面圆柱的宽度 &ndash;&gt;-->
-        <!--                    <div class="d" style="&#45;&#45;i:1;&#45;&#45;w:1.5"></div>-->
-        <!--                    <div class="d" style="&#45;&#45;i:2;&#45;&#45;w:1.6"></div>-->
-        <!--                    <div class="d" style="&#45;&#45;i:3;&#45;&#45;w:1.4"></div>-->
-        <!--                    <div class="d" style="&#45;&#45;i:4;&#45;&#45;w:1.7"></div>-->
-        <!--                    <div class="e" style="&#45;&#45;i:1"></div>-->
-        <!--                </div>-->
-        <!--                &lt;!&ndash; 设置二维码 &ndash;&gt;-->
-        <!--                <div class="f"></div>-->
-        <!--            </div>-->
-        <!--        </div>-->
+		<section id="site" class="section site" aria-label="关于本站">
+			<div class="bg-image" data-bg="assets/images/bg-footer.jpg"></div>
+			<div class="container narrow">
+				<h2 class="section-title">关于本站</h2>
+				<div class="glass card">
+					<p>这是一份采用纯 HTML / CSS / JS 打造静态网站。手机端已适配。由于网站位置迁移并且初辽备案号于2022-05-10 15:03:57 停止支持，遂将本站交付Github Page托管。本站服务器、托管均由github.io提供支持。</p>
+				</div>
+			</div>
+		</section>
+	</main>
 
-    </div>
-    <div class="section" id="things">
-        <h1 class="title-text Gshow">一些有趣的小玩意...</h1>
-        <p>
-        <h1 class="subtitle-text Gshow">maybe something fun</h1></p>
-        <div class="listD">
-            <table class="list1">
-                <tr id="trth">
-                    <th>名称</th>
-                    <th>发布者</th>
-                    <th>发布时间</th>
-                    <th>大小</th>
-                    <th>编号</th>
-                    <th>下载</th>
-                </tr>
-                <tr>
-                    <td>轻量翻译工具(LightlyTranslations)</td>
-                    <td>Shaiden</td>
-                    <td>2024-6-23</td>
-                    <td>4KB</td>
-                    <td>001</td>
-                    <td><a href="./downloads/files/LightlyTranslations.zip">here!</a></td>
-                </tr>
+	<footer class="site-footer" role="contentinfo">
+		<div class="container">
+			<p>© <span id="year"></span> Shaiden Team 2021 保留所有权利。</p>
+		</div>
+	</footer>
 
-            </table>
-        </div>
-
-
-
-    </div>
-    <div class="section" id="communication">
-
-        <h1 class="title-text Gshow">走进我的生活圈</h1>
-        <p><h1 class="subtitle-text Gshow">my "small" society</h1></p>
-        <div class="society society-wechat">
-        <div class="headIcon headIcon-wechat"></div>
-        <div class="contents contents-wechat" >
-            <div class="platform platform-wechat"></div>
-            <h1 class="title-text2">Shaiden</h1>
-            <p class="subtitle-text2">ID:shaiden1207</p>
-            <p class="subtitle-text2">“风雨不改凌云志 振衣濯足展襟怀”</p>
-        </div>
-    </div>
-
-    <div class="society society-WeOpen" onclick='window.open("https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwNTQ0Nzk3Ng==&action=getalbum&album_id=3319507032139497476&scene=173&subscene=&sessionid=svr_e5a851508ac&enterid=1720259055&from_msgid=2247483926&from_itemidx=1&count=3&nolastread=1#wechat_redirect");'>
-        <div class="headIcon headIcon-WeOpen" onclick='window.open("https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwNTQ0Nzk3Ng==&action=getalbum&album_id=3319507032139497476&scene=173&subscene=&sessionid=svr_e5a851508ac&enterid=1720259055&from_msgid=2247483926&from_itemidx=1&count=3&nolastread=1#wechat_redirect");'></div>
-        <div class="contents contents-WeOpen" onclick='window.open("https://mp.weixin.qq.com/mp/appmsgalbum?__biz=MzkwNTQ0Nzk3Ng==&action=getalbum&album_id=3319507032139497476&scene=173&subscene=&sessionid=svr_e5a851508ac&enterid=1720259055&from_msgid=2247483926&from_itemidx=1&count=3&nolastread=1#wechat_redirect");'>
-            <div class="platform platform-WeOpen"></div>
-            <h1 class="title-text2">帅德online</h1>
-            <p class="subtitle-text2">ID:shaiden109</p>
-            <p class="subtitle-text2">Shaiden的公众号</p>
-        </div>
-    </div>
-
-    <div class="society society-github">
-        <div class="headIcon headIcon-github"></div>
-        <div class="contents contents-github">
-            <div class="platform platform-github"></div>
-            <h1 class="title-text2">帅德的Github仓库</h1>
-            <a class="subtitle-text2" href="https://github.com/shaidenshaidenshaiden">https://github.com/shaidenshaidenshaiden</a>
-        </div>
-    </div>
-
-    <div class="society society-email">
-        <div class="headIcon headIcon-email"></div>
-        <div class="contents contents-email">
-            <div class="platform platform-email"></div>
-            <h1 class="title-text2">Shaiden的电子邮箱</h1>
-            <p class="subtitle-text2">Email:shaiden_plus@126.com</p>
-        </div>
-    </div>
-    <div class="shell">
-        <div class="box">
-            <img src="./library/res/background/societies/1.jpg">
-            <span>风景</span>
-        </div>
-        <div class="box">
-            <img src="./library/res/background/societies/2.jpg">
-            <span>娱乐</span>
-        </div>
-        <div class="box">
-            <img src="./library/res/background/societies/3.jpg">
-            <span>旅行</span>
-        </div>
-        <div class="box">
-            <img src="./library/res/background/societies/4.jpg">
-            <span>聚会</span>
-        </div>
-        <div class="box">
-            <img src="./library/res/background/societies/5.jpg">
-            <span>旅行</span>
-        </div>
-    </div>
-    </div>
-
-    <div class="section" id="about">
-        <h1 class="title-text Gshow">关于我们</h1>
-        <p><h1 class="subtitle-text Gshow">About Shaiden制作组</h1></p>
-    </div>
-</div>
-
-<nav class="controls">
-    <a href="#home">主页</a>
-    <a href="#me">我</a>
-    <a href="#things">小玩意</a>
-    <a href="#communication">社交</a>
-    <a href="#about">关于</a>
-    <div class="animation"></div>
-</nav>
-<script type="text/javascript" src=".\library\js\show.js"></script>
-<script type="text/javascript" src=".\library\js\me.container-overlay.js"></script>
-<script type="text/javascript">
-
-</script>
+	<script src="script.js"></script>
 </body>
-</html>
+</html> 

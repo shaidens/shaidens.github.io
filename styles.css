@@ -1,0 +1,132 @@
+/* 基础变量与渐变背景 */
+:root{
+	--bg: 16,18,24; /* 深色基底 */
+	--fg: 245,247,250;
+	--muted: 160,165,180;
+	--accent: 88,101,242; /* 柔蓝紫 */
+	--accent-2: 32,201,151; /* 薄荷绿 */
+	--radius: 16px;
+	--blur: 18px;
+	--shadow: 0 10px 30px rgba(0,0,0,.25);
+	--glass: rgba(255,255,255,.08);
+	--glass-strong: rgba(255,255,255,.14);
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+	margin:0;
+	font-family:"Noto Sans SC","Segoe UI Light","Microsoft YaHei UI Light","PingFang SC","Helvetica Neue",Arial,sans-serif;
+	color:rgb(var(--fg));
+	background:
+		radial-gradient(1200px 800px at 10% 10%, rgba(88,101,242,.25), transparent 60%),
+		radial-gradient(900px 600px at 80% 20%, rgba(32,201,151,.25), transparent 60%),
+		radial-gradient(1000px 700px at 50% 90%, rgba(255,255,255,.05), transparent 60%),
+		rgb(var(--bg));
+	background-attachment: fixed;
+	line-height:1.6;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale;
+}
+
+img{max-width:100%;display:block}
+a{color:rgb(var(--fg));text-decoration:none}
+
+.container{width:100%;max-width:1100px;margin:0 auto;padding:0 20px}
+.container.narrow{max-width:880px}
+.section{padding:88px 0;position:relative}
+.section-title{font-size:28px;font-weight:500;margin:0 0 24px 0;letter-spacing:.5px}
+
+/* 背景图片 */
+.bg-image{
+	position:absolute;
+	top:0;left:0;right:0;bottom:0;
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	opacity:.4;
+	z-index:-1;
+}
+
+/* 顶部导航 */
+.site-header{
+	position:sticky;top:0;z-index:1000;
+	backdrop-filter: blur(var(--blur));
+	-webkit-backdrop-filter: blur(var(--blur));
+	background: linear-gradient(to bottom, rgba(0,0,0,.35), rgba(0,0,0,.1) 60%, transparent);
+	border-bottom:1px solid rgba(255,255,255,.06);
+}
+.nav{height:56px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:0 12px}
+.brand{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;background:var(--glass);backdrop-filter: blur(calc(var(--blur)*.8));border:1px solid rgba(255,255,255,.08);box-shadow: var(--shadow);font-weight:700;letter-spacing:1px}
+.brand img{width:24px;height:24px;display:block}
+.nav-toggle{background:transparent;border:0;color:rgb(var(--fg));font-size:20px;width:40px;height:40px;border-radius:10px}
+.nav-list{list-style:none;margin:0;padding:0;display:flex;gap:8px}
+.nav-list a{display:inline-flex;align-items:center;height:36px;padding:0 10px;border-radius:10px;background:transparent;border:1px solid transparent}
+.nav-list a:hover{background:var(--glass);backdrop-filter: blur(calc(var(--blur)*.6));border-color:rgba(255,255,255,.08)}
+
+@media (max-width: 800px){
+	.nav-list{position:fixed;right:12px;top:56px;display:none;flex-direction:column;background:rgba(0,0,0,.35);backdrop-filter: blur(var(--blur));-webkit-backdrop-filter: blur(var(--blur));padding:10px;border-radius:12px;border:1px solid rgba(255,255,255,.08);box-shadow:var(--shadow)}
+	.nav-list.show{display:flex}
+}
+
+/* 英雄区 */
+.hero{min-height:calc(100vh - 56px);display:grid;place-items:center;padding:0}
+.hero-inner{text-align:center}
+.hero-title{font-size: clamp(40px, 8vw, 96px);font-weight:300;letter-spacing:2px;margin:0}
+.hero-subtitle{font-size: clamp(16px, 3.2vw, 24px);opacity:.85;margin-top:12px;font-weight:300}
+
+/* 卡片与毛玻璃 */
+.glass{background: var(--glass);backdrop-filter: blur(var(--blur)) saturate(120%);-webkit-backdrop-filter: blur(var(--blur)) saturate(120%);border:1px solid rgba(255,255,255,.12);border-radius: var(--radius);box-shadow: var(--shadow)}
+.card{padding:20px}
+.card-grid{display:grid;grid-template-columns: repeat(3, 1fr);gap:16px}
+@media (max-width: 900px){.card-grid{grid-template-columns: repeat(2, 1fr)}}
+@media (max-width: 600px){.card-grid{grid-template-columns: 1fr}}
+
+/* 联系方式卡片 */
+.contact-card{display:flex;align-items:center;gap:14px;padding:16px;transition: transform .35s cubic-bezier(.2,.8,.2,1), background .35s, border .35s}
+.contact-card .icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;background: rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18)}
+.contact-card .icon img{width:24px;height:24px;display:block}
+.contact-card:hover{transform: translateY(-4px);background: var(--glass-strong);border-color: rgba(255,255,255,.22)}
+.contact-card:active{transform: translateY(-1px) scale(.99)}
+
+/* 项目卡片 */
+.project-card{padding:18px;transition: transform .35s, background .35s, border .35s}
+.project-card:hover{transform: translateY(-4px);background: var(--glass-strong);border-color: rgba(255,255,255,.22)}
+
+/* 关于我布局 */
+.about-grid{display:grid;grid-template-columns: 1.2fr .8fr;gap:16px}
+@media (max-width: 900px){.about-grid{grid-template-columns:1fr}}
+.bullet-list{margin:0;padding-left:18px}
+.bullet-list li{margin:6px 0;color:rgba(var(--fg), .9)}
+
+/* 播放器 */
+.player{padding:16px}
+.player-meta{display:flex;align-items:center;gap:14px}
+.cover{width:56px;height:56px;border-radius:14px;background: linear-gradient(145deg, rgba(var(--accent),.35), rgba(var(--accent-2),.35));display:grid;place-items:center}
+.cover img{width:32px;height:32px}
+.track-title{margin:0 0 2px 0;font-weight:500}
+.track-artist{margin:0;color:rgba(var(--fg),.8);font-size:14px}
+.player-controls{display:flex;align-items:center;gap:10px;margin-top:12px}
+.player-extra{display:flex;align-items:center;gap:10px;margin-top:10px}
+.btn{height:36px;padding:0 12px;border-radius:10px;border:1px solid rgba(255,255,255,.14);background: rgba(255,255,255,.06);color:rgb(var(--fg));cursor:pointer}
+.btn.icon{width:36px;display:inline-grid;place-items:center}
+.btn.icon img{width:20px;height:20px}
+.btn.ghost{background:transparent}
+#seek{appearance:none;height:6px;border-radius:999px;background: rgba(255,255,255,.16);outline:none}
+#seek::-webkit-slider-thumb{appearance:none;width:14px;height:14px;border-radius:50%;background: rgb(var(--fg));border:2px solid rgba(0,0,0,.4);margin-top:-4px}
+.time{opacity:.85;font-feature-settings:"tnum" on; font-variant-numeric: tabular-nums}
+
+/* 页脚 */
+.site-footer{padding:40px 0;color:rgba(var(--fg), .75);position:relative}
+
+/* 动画与细节 */
+@keyframes floatSlow{from{transform: translateY(0)}50%{transform: translateY(-6px)}to{transform: translateY(0)}}
+.hero-inner{animation: floatSlow 9s ease-in-out infinite}
+
+/* 触控优化 */
+@media (hover: hover){
+	.contact-card:hover .icon{transform: rotate(8deg);transition:transform .35s}
+}
+@media (hover: none){
+	.contact-card:active{transform: scale(.99)}
+} 
